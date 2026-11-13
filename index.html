@@ -1048,7 +1048,8 @@
                 showToast('Фото-обложка загружена в облако!');
             } catch (error) {
                 console.error(error);
-                showToast('Не удалось загрузить обложку. Проверь настройки Storage.');
+                alert('Точная причина: ' + (error.message || JSON.stringify(error)));
+
             }
         }
 
